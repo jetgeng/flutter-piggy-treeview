@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:validator/validator.dart';
+import 'package:validators/validators.dart';
 
 typedef void SearchCallback(String stringToSearch);
 

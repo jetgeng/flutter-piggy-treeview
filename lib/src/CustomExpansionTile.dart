@@ -129,7 +129,7 @@ class _CustomExpansionTileState extends State<CustomExpansionTile>
         if (_isExpanded)
           _controller.forward();
         else
-          _controller.reverse().then<Null>((Null value) {
+          _controller.reverse().then<Null>((value) {
             setState(() {
               // Rebuild without widget.children.
             });
@@ -146,7 +146,7 @@ class _CustomExpansionTileState extends State<CustomExpansionTile>
       if (_isExpanded)
         _controller.forward();
       else
-        _controller.reverse().then<Null>((Null value) {
+        _controller.reverse().then<Null>((value) {
           setState(() {
             // Rebuild without widget.children.
           });

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:piggy/Global.dart';
+import 'package:piggy/src/Global.dart';
 
 typedef dynamic ActionCallBack(dynamic inputParam);
 

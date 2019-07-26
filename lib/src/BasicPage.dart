@@ -168,6 +168,7 @@ class BasicPageState extends State<BasicPage> {
   }
 
   Widget buildContent(BuildContext context) {
-    return null;
+    print("BasicPage -- BssicPage");
+    return new Container();
   }
 }

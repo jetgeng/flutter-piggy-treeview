@@ -255,6 +255,7 @@ class TreeNodeState extends State<TreeNode> {
         padding: new EdgeInsets.only(left: Constants.LIST_ITEM_INDENT),
         child: new CustomListTile(
           key: new Key(Util.getKey()),
+          /*
           leading: new Checkbox(
               value: currentNode.isChecked,
               onChanged: (bool value) {
@@ -262,10 +263,11 @@ class TreeNodeState extends State<TreeNode> {
                 if (widget.onSelectNode != null)
                   widget.onSelectNode(currentNode);
               }),
+              */
           title: new Text(
             currentNode.title,
           ),
-          subtitle: new Text(currentNode.subTitle),
+          subtitle: currentNode.subTitle == null ? null :new Text(currentNode.subTitle),
           selected: currentNode.isHilited,
           onTap: () {
             setState(() => currentNode.hilited = !currentNode.isHilited);
@@ -290,6 +292,7 @@ class TreeNodeState extends State<TreeNode> {
         key: new Key(Util.getKey()),
         title: new CustomListTile(
           key: new Key(currentNode.id),
+          /*
           leading: new Checkbox(
               value: currentNode.isChecked,
               onChanged: (bool value) {
@@ -297,6 +300,7 @@ class TreeNodeState extends State<TreeNode> {
                   selectNodes(currentNode, value);
                 });
               }),
+*/
           title: new Text(currentNode.title),
           subtitle: currentNode.subTitle == null ? null :new Text(currentNode.subTitle),
           selected: currentNode.isHilited,

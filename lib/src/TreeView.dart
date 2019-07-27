@@ -298,7 +298,7 @@ class TreeNodeState extends State<TreeNode> {
                 });
               }),
           title: new Text(currentNode.title),
-          subtitle: new Text(currentNode.subTitle),
+          subtitle: currentNode.subTitle == null ? null :new Text(currentNode.subTitle),
           selected: currentNode.isHilited,
           onTap: () {
             if (mounted) {
